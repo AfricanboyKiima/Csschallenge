@@ -21,6 +21,25 @@ a {
     border: 5px solid rgb(255, 255, 20);
 }
 
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-grid>img {
+    margin: 10px;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+    transition: 0.5s all;
+}
+
+
+/*
+This code has been saved for reference on my project.
 .flex-box {
     flex-wrap: wrap;
     flex-direction: row;
@@ -33,4 +52,4 @@ a {
 .flex-items {
     margin: 50px;
     width: 200px;
-}
+}*/
