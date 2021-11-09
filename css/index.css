@@ -44,6 +44,29 @@
                 height: 250px;
                 width: 500px;
             }
+            
+            .submit-button {
+                background: rgb(89, 150, 255);
+                padding: 10px 14px;
+                border: none;
+                font-family: "lato", sans-serif;
+                font-size: 20px;
+                font-weight: bolder;
+                color: white;
+                margin: 20px 10px;
+                width: 70px;
+                text-align: center;
+                transition: all 3s ease-in-out;
+                -webkit-transition: all 3s ease-in-out;
+                -moz-transition: all 3s ease-in-out;
+                -ms-transition: all 3s ease-in-out;
+                -o-transition: all 3s ease-in-out;
+            }
+            
+            .submit-button:hover {
+                background: rgb(147, 187, 255);
+                padding: 20px 28px;
+            }
             /*
 This code has been saved for reference on my project.
 .flex-box {
