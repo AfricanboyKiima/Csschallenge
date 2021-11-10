@@ -16,12 +16,18 @@
                 float: right;
                 background: rgb(129, 255, 108);
                 width: 30%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
             }
             
             .item {
                 padding: 10px;
                 margin: 50px;
                 border: 5px solid rgb(255, 255, 20);
+                flex-basis: 100px;
+                flex-grow: 1;
+                flex-shrink: 1;
             }
             
             .image-grid {
@@ -56,16 +62,45 @@
                 margin: 20px 10px;
                 width: 70px;
                 text-align: center;
-                transition: all 3s ease-in-out;
-                -webkit-transition: all 3s ease-in-out;
-                -moz-transition: all 3s ease-in-out;
-                -ms-transition: all 3s ease-in-out;
-                -o-transition: all 3s ease-in-out;
+                transition: all 1.5s ease-in-out;
+                -webkit-transition: all 1.5s ease-in-out;
+                -moz-transition: all 1.5s ease-in-out;
+                -ms-transition: all 1.5s ease-in-out;
+                -o-transition: all 1.5s ease-in-out;
+                /*transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);*/
+                animation-name: rotation;
+                animation-duration: 60s;
             }
             
             .submit-button:hover {
                 background: rgb(147, 187, 255);
                 padding: 20px 28px;
+            }
+            
+            #sam {
+                animation-name: rotation;
+                animation-duration: 60s;
+            }
+            
+            @keyframes rotation {
+                from {
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                }
             }
             /*
 This code has been saved for reference on my project.
